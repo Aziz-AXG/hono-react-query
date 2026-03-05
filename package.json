@@ -1,0 +1,9 @@
+{
+  "name": "hono-query-monorepo",
+  "private": true,
+  "scripts": {
+    "build": "pnpm --filter hono-react-query build",
+    "dev": "pnpm --filter next-app dev",
+    "dev:all": "pnpm -r --parallel dev"
+  }
+}
