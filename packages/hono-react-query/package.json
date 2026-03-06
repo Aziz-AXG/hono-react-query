@@ -1,5 +1,5 @@
 {
-    "name": "@AXG/hono-react-query",
+    "name": "@aziz-axg/hono-react-query",
     "version": "0.1.0",
     "description": "tRPC-like React Query integration for Hono RPC",
     "repository": {

@@ -27,17 +27,17 @@ A lightweight, tRPC-like React Query integration specifically tailored for [Hono
 
 ## Installation
 
-You need to install `@AXG/hono-react-query`, along with its peer dependencies: `hono` and `@tanstack/react-query`.
+You need to install `@aziz-axg/hono-react-query`, along with its peer dependencies: `hono` and `@tanstack/react-query`.
 
 ```bash
 # npm
-npm install @AXG/hono-react-query @tanstack/react-query hono
+npm install @aziz-axg/hono-react-query @tanstack/react-query hono
 
 # pnpm
-pnpm add @AXG/hono-react-query @tanstack/react-query hono
+pnpm add @aziz-axg/hono-react-query @tanstack/react-query hono
 
 # yarn
-yarn add @AXG/hono-react-query @tanstack/react-query hono
+yarn add @aziz-axg/hono-react-query @tanstack/react-query hono
 ```
 
 ## Quick Start (Next.js App Router Example)
@@ -88,7 +88,7 @@ Create a typed React Query client combining TanStack Query and standard `hc`. Ou
 ```typescript
 // src/lib/api.ts
 import { hc } from "hono/client";
-import { createHonoQuery } from "@AXG/hono-react-query";
+import { createHonoQuery } from "@aziz-axg/hono-react-query";
 import type { AppType } from "./server";
 
 const client = hc<AppType>("http://localhost:3000");
@@ -129,7 +129,7 @@ For the **ultimate** Next.js Server Component performance, we can configure our 
 ```typescript
 // src/lib/server-api.ts
 import { hc } from "hono/client";
-import { createHonoQueryServer } from "@AXG/hono-react-query/server";
+import { createHonoQueryServer } from "@aziz-axg/hono-react-query/server";
 import type { AppType } from "./server";
 // Import the actual Hono app definition
 import app from "./server";
