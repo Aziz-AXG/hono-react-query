@@ -2,6 +2,15 @@
     "name": "@AXG/hono-react-query",
     "version": "0.1.0",
     "description": "tRPC-like React Query integration for Hono RPC",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Aziz-AXG/hono-react-query.git"
+    },
+    "author": "Aziz-AXG",
+    "bugs": {
+        "url": "https://github.com/Aziz-AXG/hono-react-query/issues"
+    },
+    "homepage": "https://github.com/Aziz-AXG/hono-react-query#readme",
     "type": "module",
     "main": "./dist/index.cjs",
     "module": "./dist/index.js",

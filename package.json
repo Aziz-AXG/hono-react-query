@@ -1,6 +1,15 @@
 {
   "name": "hono-query-monorepo",
   "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Aziz-AXG/hono-react-query.git"
+  },
+  "author": "Aziz-AXG",
+  "bugs": {
+    "url": "https://github.com/Aziz-AXG/hono-react-query/issues"
+  },
+  "homepage": "https://github.com/Aziz-AXG/hono-react-query#readme",
   "scripts": {
     "build": "pnpm --filter hono-react-query build",
     "dev": "pnpm --filter next-app dev",
