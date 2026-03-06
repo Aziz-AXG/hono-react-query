@@ -1,6 +1,7 @@
 import { hc } from "hono/client";
 import { createHonoQueryServer } from "hono-react-query/server";
 import type { AppType } from "./server";
+import app from "./server";
 
 /**
  * Server-side API client.
@@ -11,6 +12,9 @@ import type { AppType } from "./server";
  * const newPost = await serverApi.posts.mutate({ json: { title: "Hi", body: "..." } })
  * const updated = await serverApi.posts.$put({ json: { id: "1", title: "Updated", body: "..." } })
  */
-const client = hc<AppType>("http://localhost:3000");
+const client = hc<AppType>("http://localhost:3000", {
+  // Pass the raw request locally to achieve 0ms network latency for SSR/SSG!
+  fetch: app.request,
+});
 
 export const serverApi = createHonoQueryServer(client.api);
