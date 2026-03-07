@@ -1,5 +1,5 @@
 import { hc } from "hono/client";
-import { createHonoQueryServer } from "hono-react-query/server";
+import { createHonoQueryServer } from "@aziz-axg/hono-react-query/server";
 import type { AppType } from "./server";
 import app from "./server";
 

@@ -9,16 +9,17 @@
     "lint": "eslint"
   },
   "dependencies": {
+    "@aziz-axg/hono-react-query": "workspace:*",
+    "@hono/zod-validator": "^0.4.2",
     "@tanstack/react-query": "^5.64.0",
     "hono": "^4.7.0",
-    "hono-react-query": "workspace:*",
-    "@hono/zod-validator": "^0.4.2",
-    "zod": "^3.24.0",
     "next": "16.1.6",
     "react": "19.2.3",
-    "react-dom": "19.2.3"
+    "react-dom": "19.2.3",
+    "zod": "^3.24.0"
   },
   "devDependencies": {
+    "@tanstack/react-query-devtools": "^5.91.3",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
